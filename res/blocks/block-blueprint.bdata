@@ -1,0 +1,27 @@
+## BluePrint
+
+## Block Caracteristics
+NAME name
+ID 1
+TRANSPARENT 1
+
+## Textures Coordinates Used by the Block
+    ## ATLAS ATLAS_ID
+    ## FACE_LIST TEXTURE_COORDINATES_X TEXTURE_COORDINATES_Y
+ATLAS 0
+TOP 0 15
+SIDE 1 15
+BOTTOM 2 15
+
+## Rendering Property
+SHADER 0
+
+## Drop list of the item ID dropped when destroyed in the world along with the probability to get one
+    ## DROP (nb of items dropped)
+    ## ITEM_DROPPED PROBABILTY
+DROP 2
+1 100
+3 50
+
+## Components: component used by the block (INTERACTABLE, DESTROYABLE, FALL, etc...)
+DESTROYABLE

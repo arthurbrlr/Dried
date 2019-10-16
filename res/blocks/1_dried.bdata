@@ -1,0 +1,27 @@
+## Dried Grass block
+
+## Block Caracteristics
+NAME DriedGrassBlock
+ID 1
+TRANSPARENT 0
+
+## Textures Coordinates Used by the Block
+    ## ATLAS ATLAS_ID
+    ## FACE_LIST TEXTURE_COORDINATES_X TEXTURE_COORDINATES_Y
+ATLAS 0
+TOP 2 15
+BOTTOM 1 15
+SIDE 0 15
+
+## Rendering Property
+SHADER TERRAIN
+
+## Drop list of the item ID dropped when destroyed in the world along with the probability to get one
+    ## DROP (nb of items dropped)
+    ## ITEM_DROPPED PROBABILTY
+DROP 2
+1 100
+3 50
+
+## Components: component used by the block (INTERACTABLE, DESTROYABLE, FALL, etc...)
+DESTROYABLE

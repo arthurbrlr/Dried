@@ -1,0 +1,9 @@
+PATH res/blocks/
+EXT .bdata
+
+BLOCKS
+1_dried
+2_dirt
+3_stone
+4_coal
+5_sand

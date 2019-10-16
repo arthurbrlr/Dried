@@ -1,0 +1,41 @@
+ToDo:
+
+    - Build system to enable communication between chunks (using the singleton), when checking the blocks on the edges of the chunk, it checks the adjacent chunks
+    - Transfer the GUI Renderer content (not the rendering part) into a GUIInterface (made of multiple GUIElements)
+    - Make a GUI Loader that can load informations from a file to create GUIInterfaces on the fly
+
+    - Biome manager, two types of world generation
+    - Model class, entities renderer, etc...
+
+
+http://docs.gl/
+https://www.glfw.org/docs/latest/modules.html
+
+https://github.com/ocornut/imgui/tree/docking
+https://github.com/Hopson97/MineCraft-One-Week-Challenge
+
+https://learnopengl.com/Lighting/Colors
+
+https://www.youtube.com/watch?v=KLDFBLZsFso&list=PL19F2453814E0E315&index=17
+
+
+
+
+
+To use a texture in IMGUI (with stb_image):
+
+            #define STB_IMAGE_IMPLEMENTATION
+            #include <stb_image.h>
+            [...]
+            int my_image_width, my_image_height;
+            unsigned char* my_image_data = stbi_load("my_image.png", &my_image_width, &my_image_height, NULL, 4);
+            // Turn the RGBA pixel data into an OpenGL texture:
+            GLuint my_opengl_texture;
+            glGenTextures(1, &my_opengl_texture);
+            glBindTexture(GL_TEXTURE_2D, my_opengl_texture);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+            glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image_width, image_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image_data);
+            // Now that we have an OpenGL texture, assuming our imgui rendering function (imgui_impl_xxx.cpp file) takes GLuint as ImTextureID, we can display it:
+            ImGui::Image((void*)(intptr_t)my_opengl_texture, ImVec2(my_image_width, my_image_height));

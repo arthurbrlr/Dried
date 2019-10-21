@@ -10,7 +10,7 @@ I will include some GIF/JPEG later.
 ### What I learned with this code
  * Basic design patterns in video games,
  * How does a GPU works, how it can be used to display images on the screen,
- * A shit ton about C++: unordered maps, multithreading, mutex, singletons, code optimization, compute shaders and more.
+ * A ton about C++: unordered maps, multithreading, mutex, singletons, code optimization, compute shaders and more.
 
 
 ---
